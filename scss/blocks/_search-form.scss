@@ -1,22 +1,37 @@
 .search-form {
   margin: 0 0 60px;
+  display: flex;
+  gap: 16px;
+
+  @include vp-1024 {
+    margin: 0 0 80px;
+  }
+
+  &__btn {
+    display: none;
+
+    @include vp-1024 {
+      display: block;
+    }
+  }
 }
 
 .search-input {
+  width: 100%;
   position: relative;
-  cursor: inherit;
-  
 
   &__field {
     width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding: 16px 74px 16px 16px;
+    padding: 17px 74px 17px 16px;
     border-radius: 8px;
     border: 1px solid $color-periwinkle;
-    cursor: text;
 
+    @include vp-768 {
+      padding: 19px 74px 19px 20px;
+    }
   }
 
   &__btn-wrapper {

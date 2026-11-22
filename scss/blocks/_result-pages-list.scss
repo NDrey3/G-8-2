@@ -4,4 +4,8 @@
   justify-content: center;
   gap: 8px;
   margin: 0 0 40px;
+
+  @include vp-1024 {
+    margin: 0 0 60px;
+  }
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Результаты поиска - Газпромбанк</title>
 </head>
 
@@ -79,19 +79,19 @@
             <div class="search-input">
               <input class="search-input__field" type="search" id="search-text" name="search-text" placeholder="иис">
               <div class="search-input__btn-wrapper">
-                <button class="btn-icon btn-reset" type="reset">
+                <button class="btn-icon btn-reset" type="reset" aria-label="сбросить">
                   <svg class="search-input__icon-reset" width="24" height="24" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-reset"></use>
                   </svg>
                 </button>
-                <button class="btn-icon btn-search" type="button">
+                <button class="btn-icon btn-search" type="button" aria-label="найти">
                   <svg class="search-input__icon-search" width="24" height="24" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-search"></use>
                   </svg>
                 </button>
               </div>
-
             </div>
+            <button class="btn btn--secondary search-form__btn" type="button">Найти</button>
           </form>
           <ul class="results-list">
             <li class="results-list__item">
@@ -148,7 +148,7 @@
 
           <ul class="result-pages-list">
             <li class="result-pages-list__item">
-              <a class="page-box" href="#">
+              <a class="page-box" href="#" aria-label="листать назад">
                 <span class="page-box__navigation">
                   <svg class="page-box__icon" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-prev"></use>
@@ -207,7 +207,7 @@
               </a>
             </li>
             <li class="result-pages-list__item">
-              <a class="page-box" href="#">
+              <a class="page-box" href="#" aria-label="листать вперед">
                 <span class="page-box__navigation page-box__navigation--active">
                   <svg class="page-box__icon" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-next"></use>
@@ -219,9 +219,11 @@
 
           <div class="search-results__system">
             <span class="search-results__system-text">Поисковая технология</span>
-            <svg class="search-results__system-icon" width="66" height="20" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-Yandex-logo"></use>
-            </svg>
+            <a class="search-results__system-link" href="#" aria-label="перейти на страницу">
+              <svg class="system-icon" width="66" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-Yandex-logo"></use>
+              </svg>
+            </a>
           </div>
 
         </div>
