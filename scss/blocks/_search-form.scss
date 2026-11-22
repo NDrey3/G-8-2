@@ -1,0 +1,35 @@
+.search-form {
+  margin: 0 0 60px;
+}
+
+.search-input {
+  position: relative;
+  cursor: inherit;
+  
+
+  &__field {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 16px 74px 16px 16px;
+    border-radius: 8px;
+    border: 1px solid $color-periwinkle;
+    cursor: text;
+
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: $color-mischka;
+    gap: 12px;
+
+    .btn-icon {
+      color: $color-mischka;
+    }
+  }
+}
