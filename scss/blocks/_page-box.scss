@@ -11,6 +11,11 @@
   border-radius: 8px;
   overflow: hidden;
 
+  &:not(&--active):hover,
+  &:not(&--active):focus-visible {
+    background-color: $color-link-water;
+  }
+
   &--active {
     background-color: $color-black-russian;
     color: $color-white;
@@ -23,13 +28,21 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-color: $color-white-smoke;
-    color: $color-dark-gray;
+
+    &:not(&--disabled):hover,
+    &:not(&--disabled):focus-visible {
+      background-color: $color-link-water;
+    }
+
+    &--disabled {
+      background-color: $color-white-smoke;
+      color: $color-dark-gray;
+      cursor: none;
+    }
 
     &--active {
       background-color: $color-solitude-2;
       color: unset;
     }
   }
-
 }

@@ -64,7 +64,7 @@
             <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link breadcrumbs__link--active">Советы от Газпромбанка</span>
+            <span class="breadcrumbs__link breadcrumbs__link--active">Результаты поиска</span>
           </li>
         </ul>
       </div>
@@ -73,47 +73,85 @@
     <section class="search-results">
       <div class="container">
         <h1 class="search-results__title">Результаты поиска</h1>
-
         <div class="search-results__wrapper">
-          <form class="search-form" action="" method="POST">
-            <div class="custom-input">
-              <input class="custom-input__field" type="search" id="apartment-number" name="apartment-number"
-                placeholder="Введите номер">
-              <button class="custom-input__btn-icon" type="reset">
-                <svg class="custom-input__icon-reset" width="20" height="20" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-close"></use>
-                </svg>
-              </button>
-              <button class="custom-input__btn-icon" type="button">
-                <svg class="custom-input__icon-search" width="20" height="20" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
+
+          <!-- форма поиска -->
+          <form class="search-form search-form--empty" action="#" method="POST">
+            <div class="search-form__wrapper">
+              <div class="custom-search">
+                <input class="custom-search__field" type="search" id="search-text" name="search-text" placeholder="">
+                <div class="custom-search__btn-wrapper">
+                  <button class="btn-icon btn-reset" type="reset" aria-label="сбросить">
+                    <svg class="custom-search__icon-reset" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-reset"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-icon btn-search" type="button" aria-label="найти">
+                    <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button class="search-form__btn btn btn--secondary" type="button">Найти</button>
+            </div>
+
+            <ul class="search-form__variants-list">
+              <li class="search-form__variants-item">
+                <a class="variant-link" href="#">Что входит в&nbsp;Привилегии?</a>
+              </li>
+              <li class="search-form__variants-item">
+                <a class="variant-link" href="#">Курсы валют</a>
+              </li>
+              <li class="search-form__variants-item">
+                <a class="variant-link" href="#">Где скачать приложение?</a>
+              </li>
+              <li class="search-form__variants-item">
+                <a class="variant-link" href="#">Рефинансирование</a>
+              </li>
+            </ul>
+          </form>
+
+          <div class="search-results-empty">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/loupe-tablet.png 1x, images/loupe-tablet@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="images/loupe-desktop.png 1x, images/loupe-desktop@2x.png 2x">
+              <source media="(min-width: 1304px)"
+                srcset="images/loupe-desktop-lg.png 1x, images/loupe-desktop-lg@2x.png 2x">
+              <img class="search-results-empty__img" src="images/loupe-mobile.png" srcset="images/loupe-mobile@2x.png 2x"
+                width="140" height="140" alt="Изображение лупы">
+            </picture>
+
+            <h2 class="search-results-empty__title">Ничего не&nbsp;нашлось</h2>
+            <p class="search-results-empty__text">Попробуйте изменить запрос</p>
+          </div>
+
+          <!-- cookies -->
+          <div class="cookies">
+            <a class="cookies__accord" href="#" aria-label="согласие на сбор данных">
+              <svg class="cookies-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-like"></use>
+              </svg>
+            </a>
+            <div class="cookies__box">
+              <p class="cookies__box-text">Мы&nbsp;обрабатываем файлы cookie, чтобы улучшить работу сайта.
+                Оставаясь на&nbsp;нашем сайте, вы&nbsp;соглашаетесь с&nbsp;Политикой пользовательских данных. Если
+                вы&nbsp;хотите запретить обработку файлов cookie, отключите cookie в&nbsp;настройках вашего браузера</p>
+              <button class="cookies__box-btn" type="button" aria-label="закрыть">
+                <svg class="cookies-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-reset"></use>
                 </svg>
               </button>
             </div>
-          </form>
-          <ul class="results-list">
-            <li class="results-list__item">
-              <div class="result-card">
-                <h2 class="result-card__title"></h2>
-                <p class="result-card__text"></p>
-              </div>
-            </li>
+          </div>
 
-          </ul>
-
-          <ul class="result-pages-list">
-            <li class="result-pages-list__item">
-              <div class="page-box">
-                <span class="page-box__number"></span>
-              </div>
-            </li>
-          </ul>
-
-          <div class="search-system">
-            <span class="search-system__text">Поисковая технология</span>
-            <svg class="search-system__icon" width="66" height="20" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-Yandex-logo"></use>
-            </svg>
+          <div class="search-results__system">
+            <span class="search-results__system-text">Поисковая технология</span>
+            <a class="search-results__system-link" href="#" aria-label="перейти на страницу">
+              <svg class="system-icon" width="66" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-Yandex-logo"></use>
+              </svg>
+            </a>
           </div>
 
         </div>

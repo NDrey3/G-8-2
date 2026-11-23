@@ -1,0 +1,42 @@
+.custom-search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 16px;
+
+  &__field {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 17px 74px 17px 16px;
+    border-radius: 8px;
+    border: 1px solid $color-periwinkle;
+    outline: none;
+
+    &:hover {
+      border-color: $color-manatee;
+    }
+
+    &:focus-visible {
+      border-color: $color-royal-blue-1;
+    }
+
+    @include vp-768 {
+      padding: 18px 74px 18px 20px;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    gap: 12px;
+
+    .btn-icon {
+      color: $color-mischka;
+    }
+  }
+}

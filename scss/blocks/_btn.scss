@@ -25,9 +25,14 @@
   }
 
   &--secondary {
-    padding: 19px 32px;
+    padding: 19px 33px;
     color: $color-white;
     background-color: $color-royal-blue-1;
+    display: none;
+
+    @include vp-1024 {
+      display: block;
+    }
 
     &:focus-visible,
     &:hover {

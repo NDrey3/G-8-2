@@ -58,6 +58,45 @@
   </header>
   <main>
 
+    <!-- выпадающая форма поиска показывается при active-->
+    <form class="search-form search-form__top search-form__top--activ" action="#" method="POST">
+      <div class="container">
+        <div class="search-form__wrapper">
+          <div class="custom-search">
+            <input class="custom-search__field" type="search" id="search-text" name="search-text" placeholder="">
+            <div class="custom-search__btn-wrapper">
+              <button class="btn-icon btn-reset" type="reset" aria-label="сбросить">
+                <svg class="custom-search__icon-reset" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-reset"></use>
+                </svg>
+              </button>
+              <button class="btn-icon btn-search" type="button" aria-label="найти">
+                <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="search-form__btn btn btn--secondary" type="button">Найти</button>
+        </div>
+
+        <ul class="search-form__variants-list">
+          <li class="search-form__variants-item">
+            <a class="variant-link" href="#">Что входит в&nbsp;Привилегии?</a>
+          </li>
+          <li class="search-form__variants-item">
+            <a class="variant-link" href="#">Курсы валют</a>
+          </li>
+          <li class="search-form__variants-item">
+            <a class="variant-link" href="#">Где скачать приложение?</a>
+          </li>
+          <li class="search-form__variants-item">
+            <a class="variant-link" href="#">Рефинансирование</a>
+          </li>
+        </ul>
+      </div>
+    </form>
+
     <div class="breadcrumbs">
       <div class="container">
         <ul class="breadcrumbs__list">
@@ -75,27 +114,32 @@
       <div class="container">
         <h1 class="search-results__title">Результаты поиска</h1>
         <div class="search-results__wrapper">
+
+          <!-- форма поиска -->
           <form class="search-form" action="#" method="POST">
-            <div class="search-input">
-              <input class="search-input__field" type="search" id="search-text" name="search-text" placeholder="иис">
-              <div class="search-input__btn-wrapper">
-                <button class="btn-icon btn-reset" type="reset" aria-label="сбросить">
-                  <svg class="search-input__icon-reset" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-reset"></use>
-                  </svg>
-                </button>
-                <button class="btn-icon btn-search" type="button" aria-label="найти">
-                  <svg class="search-input__icon-search" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
+            <div class="search-form__wrapper">
+              <div class="custom-search">
+                <input class="custom-search__field" type="search" id="search-text" name="search-text" placeholder="">
+                <div class="custom-search__btn-wrapper">
+                  <button class="btn-icon btn-reset" type="reset" aria-label="сбросить">
+                    <svg class="custom-search__icon-reset" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-reset"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-icon btn-search" type="button" aria-label="найти">
+                    <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
+              <button class="search-form__btn btn btn--secondary" type="button">Найти</button>
             </div>
-            <button class="btn btn--secondary search-form__btn" type="button">Найти</button>
           </form>
+
           <ul class="results-list">
             <li class="results-list__item">
-              <div class="result-card">
+              <a class="result-card" href="#">
                 <h2 class="result-card__title">ИИС в&nbsp;2024&nbsp;&mdash; как открыть индивидуальный инвестиционный
                   счет</h2>
                 <p class="result-card__text"><span
@@ -104,52 +148,52 @@
                   С&nbsp;его помощью можно не&nbsp;только торговать валютой и&nbsp;ценными бумаги,
                   но&nbsp;и&nbsp;получать до&nbsp;52&nbsp;000&nbsp;руб.&nbsp;за&nbsp; <span
                     class="result-card__text result-card__text--bold">счет</span> налогового вычета.</p>
-              </div>
+              </a>
             </li>
             <li class="results-list__item">
-              <div class="result-card">
+              <a class="result-card" href="#">
                 <h2 class="result-card__title">Индивидуальный инвестиционный счет&nbsp;&mdash; открыть
                   в&nbsp;Газпромбанке</h2>
                 <p class="result-card__text"><span class="result-card__text result-card__text--bold">Индивидуальный
                     инвестиционный счет</span> в&nbsp;Газпромбанке для частных лиц.
                   Воспользуйтесь калькулятором и&nbsp;рассчитайте доходность с&nbsp;новым инструментом для накоплений.
                 </p>
-              </div>
+              </a>
             </li>
             <li class="results-list__item">
-              <div class="result-card">
+              <a class="result-card" href="#">
                 <h2 class="result-card__title">ИИС&nbsp;&mdash; открытие индивидуального счета| Газпромбанк</h2>
                 <p class="result-card__text">Откройте <span
                     class="result-card__text result-card__text--bold">индивидуальный инвестиционный счет</span> онлайн
                   от&nbsp;Газпромбанка:
                   доступный способ размещения средств, четыре стратегии на&nbsp;выбор, налоговый вычет
                   до&nbsp;52&nbsp;000&nbsp;руб.&nbsp;в&nbsp;год.</p>
-              </div>
+              </a>
             </li>
             <li class="results-list__item">
-              <div class="result-card">
+              <a class="result-card" href="#">
                 <h2 class="result-card__title">Налоговые вычеты типов&nbsp;А и&nbsp;Б для держателей ИИС&nbsp;|
                   Газпромбанк</h2>
                 <p class="result-card__text"><span class="result-card__text result-card__text--bold">Индивидуальный
                     инвестиционный (ИИС)</span> дает инвестору право получить
                   налоговый вычет типа&nbsp;А или Б.&nbsp;При этом воспользоваться можно только одним способом.</p>
-              </div>
+              </a>
             </li>
             <li class="results-list__item">
-              <div class="result-card">
+              <a class="result-card" href="#">
                 <h2 class="result-card__title">&laquo;О&nbsp;запрете на&nbsp;покупку иностранных бумаг
                   на&nbsp;ИИС&raquo; от&nbsp;29&nbsp;января</h2>
                 <p class="result-card__text">Являются иностранные государства (далее&nbsp;&mdash; иностранные ценные
                   бумаги), Банком ГПБ (АО) с&nbsp;29.01.2024 заблокирована возможность покупки клиентами иностранных
                   ценных бумаг на&nbsp;<span class="result-card__text result-card__text--bold">ИИС</span>.</p>
-              </div>
+              </a>
             </li>
           </ul>
 
           <ul class="result-pages-list">
             <li class="result-pages-list__item">
               <a class="page-box" href="#" aria-label="листать назад">
-                <span class="page-box__navigation">
+                <span class="page-box__navigation page-box__navigation--disabled">
                   <svg class="page-box__icon" width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-prev"></use>
                   </svg>

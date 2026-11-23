@@ -1,0 +1,40 @@
+.cookies {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  background-color: $color-white;
+
+  &__accord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    background-color: $color-black-russian;
+  }
+
+  &__box {
+    display: flex;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px 0px $color-black-russian-2;
+    padding: 12px 0 12px 12px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    gap: 16px;
+  }
+
+  &__box-btn {
+    border: none;
+    border-left: 1px solid $color-hawkes-blue;
+    color: $color-mischka;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+}
