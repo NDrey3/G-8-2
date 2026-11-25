@@ -13,6 +13,7 @@
 
   @include vp-768 {
     right: 20px;
+    gap: 20px;
   }
 
   &__accord {
@@ -52,22 +53,26 @@
       font-size: 13px;
       line-height: 16px;
     }
-  }
 
-  &__box-btn {
-    border: none;
-    border-left: 1px solid $color-hawkes-blue;
-    color: $color-mischka;
-    padding: 0 16px;
-    cursor: pointer;
-
-    @include vp-768 {
-      padding: 0 20px;
+    &-link {
+      color: $color-royal-blue-1;
     }
 
-    &:hover,
-    &:focus-visible {
-      color: $color-royal-blue-1;
+    &-btn {
+      border: none;
+      border-left: 1px solid $color-hawkes-blue;
+      color: $color-mischka;
+      padding: 0 16px;
+      cursor: pointer;
+
+      @include vp-768 {
+        padding: 0 20px;
+      }
+
+      &:hover,
+      &:focus-visible {
+        color: $color-royal-blue-1;
+      }
     }
   }
 

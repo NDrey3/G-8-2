@@ -9,10 +9,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding: 17px 74px 17px 16px;
+    padding: 17px 80px 17px 16px;
     border-radius: 8px;
     border: 1px solid $color-periwinkle;
     outline: none;
+
+    @include vp-768 {
+      padding-right: 90px;
+    }
 
     &:hover {
       border-color: $color-manatee;
@@ -34,6 +38,10 @@
     right: 16px;
     transform: translateY(-50%);
     gap: 12px;
+
+    @include vp-768 {
+      right: 20px;
+    }
 
     .btn-icon {
       color: $color-mischka;
