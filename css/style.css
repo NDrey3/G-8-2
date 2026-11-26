@@ -1084,6 +1084,7 @@ textarea {
 .footer__left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .footer__logo-link {
   display: flex;
@@ -1111,6 +1112,7 @@ textarea {
 .footer__contacts, .footer__phone, .footer__feedback, .footer__location, .footer__right, .footer__policy, .footer__copyright {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .footer__contacts {
   row-gap: 16px;
@@ -1428,7 +1430,7 @@ textarea {
   flex-direction: column;
   align-items: end;
   gap: 15px;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 15px;
   margin: 0 0 0 15px;
@@ -1441,7 +1443,7 @@ textarea {
     gap: 20px;
   }
 }
-.cookies__accord {
+.cookies__accord-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1450,14 +1452,15 @@ textarea {
   height: 48px;
   background-color: #1E222E;
 }
-.cookies__accord:hover, .cookies__accord:focus-visible {
+.cookies__accord-btn:hover, .cookies__accord-btn:focus-visible {
   background-color: #383F52;
 }
 .cookies__box {
   display: flex;
   border: 1px solid #DBDFEC;
+  border: none;
   border-radius: 12px;
-  box-shadow: 0px 6px 20px 0px rgba(30, 34, 46, 0.5);
+  box-shadow: 0px 6px 20px 0px rgba(50, 54, 65, 0.2);
   padding: 12px 0 12px 12px;
   font-weight: 400;
   font-size: 10px;
